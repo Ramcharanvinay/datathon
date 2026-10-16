@@ -1,0 +1,155 @@
+/* CampusSpace Custom SaaS Styles */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Metric / Stat Card */
+.stat-card {
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border: 1px solid var(--border-color, #E2E8F0);
+    background-color: var(--card-bg, #FFFFFF);
+    margin-bottom: 0.75rem;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.stat-label {
+    font-size: 0.825rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted, #64748B);
+    margin-bottom: 0.35rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-main, #0F172A);
+}
+
+.stat-sub {
+    font-size: 0.8rem;
+    color: var(--text-muted, #64748B);
+    margin-top: 0.35rem;
+}
+
+/* Recommendation Card */
+.rec-card {
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--card-bg, #FFFFFF);
+    border: 1px solid var(--border-color, #E2E8F0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.rec-card.best-fit {
+    border-left: 6px solid #0F9D8A;
+}
+
+.rec-card.alternative {
+    border-left: 6px solid #3B82F6;
+}
+
+.rec-card.good-option {
+    border-left: 6px solid #F59E0B;
+}
+
+/* Tier Badges */
+.tier-badge {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-best {
+    background-color: #ECFDF5;
+    color: #065F46;
+    border: 1px solid #A7F3D0;
+}
+
+.badge-alt {
+    background-color: #EFF6FF;
+    color: #1E40AF;
+    border: 1px solid #BFDBFE;
+}
+
+.badge-good {
+    background-color: #FFFBEB;
+    color: #92400E;
+    border: 1px solid #FDE68A;
+}
+
+.badge-tag {
+    background-color: var(--tag-bg, #F1F5F9);
+    color: var(--tag-color, #475569);
+    border: 1px solid var(--border-color, #E2E8F0);
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.35rem;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+/* Insight Callout */
+.insight-box {
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: var(--card-bg, #FFFFFF);
+    border: 1px solid var(--border-color, #E2E8F0);
+    border-left: 4px solid #0F9D8A;
+}
+
+.insight-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main, #0F172A);
+    margin-bottom: 0.25rem;
+}
+
+.insight-metric {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #0F9D8A;
+    margin-bottom: 0.5rem;
+}
+
+.insight-body {
+    font-size: 0.85rem;
+    color: var(--text-muted, #64748B);
+    line-height: 1.45;
+}
+
+.insight-caveat {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--text-muted, #94A3B8);
+    margin-top: 0.5rem;
+}
+
+/* Footer note */
+.app-footer {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted, #94A3B8);
+    border-top: 1px solid var(--border-color, #E2E8F0);
+    margin-top: 3rem;
+}
